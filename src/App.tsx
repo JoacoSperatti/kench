@@ -6,7 +6,7 @@ import Tragos from './components/Tragos';
 import Artistas from './components/Artistas';
 import Ustedes from './components/Ustedes';
 import Djs from './components/Djs';
-import { Camera, X, Music, MessageCircle } from 'lucide-react';
+import { Camera, X, Music } from 'lucide-react';
 
 function App() {
   return (
