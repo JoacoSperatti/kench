@@ -1,0 +1,154 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'DCC-Ash';
+  src: url('/fonts/DCC - Ash.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sequel-Sans-Black';
+  src: url('/fonts/SequelSans/Sequel Sans Black Disp.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sequel-Sans-Book';
+  src: url('/fonts/SequelSans/Sequel Sans Book Body.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('/fonts/Quicksand/static/Quicksand-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@theme {
+  --color-kench-black: #0a0a0a;
+  --color-kench-yellow: #ffff00;
+  --color-kench-red: #ff0000;
+  --color-kench-orange: #ff8800;
+  --color-kench-pink: #ff00ff;
+  
+  --font-ash: "DCC-Ash", sans-serif;
+  --font-sequel: "Sequel-Sans-Black", sans-serif;
+  --font-body: "Quicksand", sans-serif;
+  
+  /* Deprecated but kept for compatibility if needed */
+  --font-display: "DCC-Ash", sans-serif;
+  --font-street: "Sequel-Sans-Black", sans-serif;
+}
+
+:root {
+  background-color: var(--color-kench-black);
+  color: white;
+  font-family: var(--font-body);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+@layer base {
+  h1, h2, h3, h4 {
+    font-family: var(--font-ash);
+    line-height: 1.4; /* More breathable line-height as requested */
+  }
+}
+
+/* Custom Ash Font line-height labels. */
+.font-ash-label {
+  font-family: var(--font-ash);
+  line-height: 1.5;
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+/* If 'interlineado 20' meant something else, we might need to adjust.
+   But usually in design apps it means 20pt/px. 
+   If it's too small for big titles, I'll use a more sensible default and 
+   let them know, or use leading-[20px] utility. */
+
+.kench-text-shadow {
+  text-shadow: 4px 4px 0px var(--color-kench-red), 8px 8px 0px rgba(0,0,0,0.5);
+}
+
+.kench-outline {
+  -webkit-text-stroke: 1px var(--color-kench-yellow);
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: inline-block;
+  animation: marquee 15s linear infinite;
+}
+
+/* Sticker/Badge style */
+.sticker {
+  @apply inline-block px-4 py-2 bg-kench-yellow text-black font-ash text-xl transform rotate-3 border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)];
+}
+
+.sticker-red {
+  @apply inline-block px-4 py-2 bg-kench-red text-kench-yellow font-ash text-xl transform -rotate-2 border-2 border-kench-yellow shadow-[4px_4px_0px_0px_rgba(255,255,0,0.5)];
+}
+
+.glitch-effect {
+  position: relative;
+  text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+    -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+    0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  animation: glitch 500ms infinite;
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+      -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+      0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  14% {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+      -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+      0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  15% {
+    text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+      0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.05em -0.05em 0 rgba(0, 255, 0, 0.75);
+  }
+  49% {
+    text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+      0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.05em -0.05em 0 rgba(0, 255, 0, 0.75);
+  }
+  50% {
+    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+      0.05em 0 0 rgba(0, 255, 0, 0.75),
+      0 -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  99% {
+    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+      0.05em 0 0 rgba(0, 255, 0, 0.75),
+      0 -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  100% {
+    text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75),
+      -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+}
