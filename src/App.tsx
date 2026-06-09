@@ -1,12 +1,7 @@
 import Hero from './components/Hero';
-import Carousel from './components/Carousel';
-import SobreNosotros from './components/SobreNosotros';
-import Juegos from './components/Juegos';
-import Tragos from './components/Tragos';
-import Artistas from './components/Artistas';
-import Ustedes from './components/Ustedes';
-import Djs from './components/Djs';
-import { Camera, X, Music } from 'lucide-react';
+import Diferencias from './components/Diferencias';
+import UltimosEventos from './components/UltimosEventos';
+import Contacto from './components/Contacto';
 
 function App() {
   return (
@@ -24,22 +19,29 @@ function App() {
           <img src="/assets/logo.png" alt="Kench Logo" className="h-16 md:h-20 transform -rotate-2 transition-transform hover:scale-105" />
         </a>
         <div className="hidden lg:flex gap-8 items-center">
-          <a href="#sobre-nosotros" className="hover:text-kench-yellow transition-colors font-sequel text-sm tracking-tighter uppercase">Sobre nosotros</a>
-          <a href="#djs" className="hover:text-kench-yellow transition-colors font-sequel text-sm tracking-tighter uppercase">DJs</a>
-          <a href="#tragos" className="hover:text-kench-red transition-colors font-sequel text-sm tracking-tighter uppercase">Tragos</a>
-          <a href="#galeria" className="hover:text-kench-yellow transition-colors font-sequel text-sm tracking-tighter uppercase">Galería</a>
-          <a href="#juegos" className="hover:text-kench-red transition-colors font-sequel text-sm tracking-tighter uppercase">Juegos</a>
-          <a href="#artistas" className="hover:text-kench-yellow transition-colors font-sequel text-sm tracking-tighter uppercase">Artistas</a>
-          <a href="#ustedes" className="hover:text-kench-red transition-colors font-sequel text-sm tracking-tighter uppercase">Ustedes</a>
-          <button className="bg-kench-red text-kench-yellow px-8 py-3 font-ash text-2xl hover:bg-white hover:text-black transition-all border-2 border-kench-yellow shadow-[4px_4px_0px_0px_rgba(255,0,0,1)] hover:shadow-none active:translate-x-1 active:translate-y-1">
+          <a href="#evento" className="hover:text-kench-yellow transition-colors font-sequel text-sm tracking-tighter uppercase">Próxima fecha</a>
+          <a href="#diferencias" className="hover:text-kench-yellow transition-colors font-sequel text-sm tracking-tighter uppercase">¿Por qué Kench?</a>
+          <a href="#ultimos-eventos" className="hover:text-kench-red transition-colors font-sequel text-sm tracking-tighter uppercase">Últimos eventos</a>
+          <a href="#contacto" className="hover:text-kench-yellow transition-colors font-sequel text-sm tracking-tighter uppercase">Contacto</a>
+          <a 
+            href="https://www.passline.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="bg-kench-red text-kench-yellow px-8 py-3 font-ash text-2xl hover:bg-white hover:text-black transition-all border-2 border-kench-yellow shadow-[4px_4px_0px_0px_rgba(255,0,0,1)] hover:shadow-none active:translate-x-1 active:translate-y-1"
+          >
             TICKETS
-          </button>
+          </a>
         </div>
         {/* Mobile Ticket Button */}
         <div className="lg:hidden">
-          <button className="bg-kench-red text-kench-yellow px-6 py-2 font-ash text-xl border-2 border-kench-yellow">
+          <a 
+            href="https://www.passline.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="bg-kench-red text-kench-yellow px-6 py-2 font-ash text-xl border-2 border-kench-yellow inline-block"
+          >
             TICKETS
-          </button>
+          </a>
         </div>
       </nav>
 
@@ -65,7 +67,7 @@ function App() {
       <main>
         <Hero />
         
-        {/* New Scrolling Marquee for dynamic feel */}
+        {/* Scrolling Marquee */}
         <div className="bg-kench-yellow py-4 overflow-hidden whitespace-nowrap border-y-4 border-black rotate-1 scale-105 z-20 relative">
           <div className="animate-marquee inline-block">
             {[...Array(10)].map((_, i) => (
@@ -76,33 +78,11 @@ function App() {
           </div>
         </div>
 
-        <div id="sobre-nosotros" className="pt-20">
-          <SobreNosotros />
-        </div>
+        <Diferencias />
 
-        <div id="djs">
-          <Djs />
-        </div>
+        <UltimosEventos />
 
-        <div id="tragos">
-          <Tragos />
-        </div>
-
-        <div id="galeria">
-          <Carousel />
-        </div>
-
-        <div id="juegos">
-          <Juegos />
-        </div>
-
-        <div id="artistas">
-          <Artistas />
-        </div>
-
-        <div id="ustedes">
-          <Ustedes />
-        </div>
+        <Contacto />
 
         {/* Informative banner with Polenta vibe */}
         <div className="bg-kench-red py-12 overflow-hidden whitespace-nowrap border-y-8 border-kench-yellow -rotate-1">
@@ -128,32 +108,11 @@ function App() {
             <p className="text-gray-400 font-body text-xl max-w-2xl mx-auto">Únete a la comunidad más loca de Buenos Aires. Barra libre, buena música y el mejor ambiente.</p>
           </div>
           
-          <div className="flex flex-wrap justify-center gap-12 relative z-10">
-            <a href="#" className="flex flex-col items-center gap-2 group">
-              <div className="p-6 bg-white/5 rounded-2xl group-hover:bg-kench-yellow group-hover:text-black transition-all transform group-hover:-rotate-6 border border-white/10">
-                <Camera size={40} />
-              </div>
-              <span className="font-sequel text-xs tracking-widest uppercase text-gray-500 group-hover:text-white">Instagram</span>
-            </a>
-            <a href="#" className="flex flex-col items-center gap-2 group">
-              <div className="p-6 bg-white/5 rounded-2xl group-hover:bg-kench-red group-hover:text-white transition-all transform group-hover:rotate-6 border border-white/10">
-                <X size={40} />
-              </div>
-              <span className="font-sequel text-xs tracking-widest uppercase text-gray-500 group-hover:text-white">X / Twitter</span>
-            </a>
-            <a href="#" className="flex flex-col items-center gap-2 group">
-              <div className="p-6 bg-white/5 rounded-2xl group-hover:bg-kench-pink group-hover:text-white transition-all transform group-hover:-rotate-3 border border-white/10">
-                <Music size={40} />
-              </div>
-              <span className="font-sequel text-xs tracking-widest uppercase text-gray-500 group-hover:text-white">Spotify</span>
-            </a>
-          </div>
-          
           <div className="w-full h-px bg-white/10" />
           
-          <div className="flex flex-col md:flex-row justify-between w-full text-gray-600 font-sequel text-xs tracking-widest uppercase">
+          <div className="flex flex-col md:flex-row justify-between w-full text-gray-600 font-sequel text-xs tracking-widest uppercase gap-4 text-center md:text-left">
             <p>© 2026 KENCH FIESTA. TODOS LOS DERECHOS RESERVADOS.</p>
-            <div className="flex gap-8">
+            <div className="flex gap-8 justify-center">
               <a href="#" className="hover:text-white">Privacidad</a>
               <a href="#" className="hover:text-white">Términos</a>
             </div>
