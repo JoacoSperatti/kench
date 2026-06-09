@@ -10,17 +10,17 @@ const Diferencias = () => {
     },
     {
       icon: <Music className="w-12 h-12 text-kench-yellow" />,
-      titulo: 'MÚSICA AL PALO',
+      titulo: 'MUSICA AL PALO',
       descripcion: 'DJ sets asesinos combinando el reggaetón más sucio de la vieja escuela, los hits del pop y cumbia para no dejar de bailar.'
     },
     {
       icon: <Flame className="w-12 h-12 text-kench-orange" />,
-      titulo: 'EL CAOS QUE BUSCÁS',
+      titulo: 'EL CAOS QUE BUSCAS',
       descripcion: 'Shows sorpresa, juegos en vivo con premios insólitos, reparto de merch oficial y esa energía descontrolada que solo se vive en Kench.'
     },
     {
       icon: <Smile className="w-12 h-12 text-kench-pink" />,
-      titulo: 'VENÍ COMO QUIERAS',
+      titulo: 'VENI COMO QUIERAS',
       descripcion: 'Acá no hay dress code ni caretas. Ponete tu outfit favorito y vení a disfrutar con amigos. Cero pose, pura diversión.'
     }
   ];
@@ -36,7 +36,7 @@ const Diferencias = () => {
           <div>
             <span className="text-kench-red font-sequel text-sm tracking-[0.2em] uppercase block mb-3">LA DIFERENCIA KENCH</span>
             <h2 className="text-5xl md:text-8xl font-ash text-white uppercase leading-none tracking-tight">
-              ¿POR QUÉ KENCH?
+              POR QUE KENCH?
             </h2>
           </div>
           <div className="sticker bg-kench-yellow text-black transform rotate-2">

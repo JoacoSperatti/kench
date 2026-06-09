@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: 'DCC-Ash';
-  src: url('/fonts/DCC - Ash.otf') format('opentype');
+  font-family: 'Ash';
+  src: url('/fonts/Ash.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -35,12 +35,12 @@
   --color-kench-orange: #ff8800;
   --color-kench-pink: #ff00ff;
   
-  --font-ash: "DCC-Ash", sans-serif;
+  --font-ash: "Ash", sans-serif;
   --font-sequel: "Sequel-Sans-Black", sans-serif;
   --font-body: "Quicksand", sans-serif;
   
   /* Deprecated but kept for compatibility if needed */
-  --font-display: "DCC-Ash", sans-serif;
+  --font-display: "Ash", sans-serif;
   --font-street: "Sequel-Sans-Black", sans-serif;
 }
 

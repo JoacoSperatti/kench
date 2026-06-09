@@ -16,7 +16,7 @@ function App() {
           }}
           className="flex items-center gap-2 cursor-pointer"
         >
-          <img src="/assets/logo.png" alt="Kench Logo" className="h-16 md:h-20 transform -rotate-2 transition-transform hover:scale-105" />
+          <img src="/assets/kench solo.png" alt="Kench Logo" className="h-16 md:h-20 transform -rotate-2 transition-transform hover:scale-105" />
         </a>
         <div className="hidden lg:flex gap-8 items-center">
           <a href="#evento" className="hover:text-kench-yellow transition-colors font-sequel text-sm tracking-tighter uppercase">Próxima fecha</a>
@@ -72,7 +72,7 @@ function App() {
           <div className="animate-marquee inline-block">
             {[...Array(10)].map((_, i) => (
               <span key={i} className="text-black font-ash text-5xl mx-12 uppercase">
-                KENCH • LA ÚNICA Y MALDITA FIESTA BARRA LIBRE • KENCH • 
+                KENCH • LA UNICA Y MALDITA FIESTA BARRA LIBRE • KENCH • 
               </span>
             ))}
           </div>
@@ -103,8 +103,8 @@ function App() {
             <div className="text-[12rem] md:text-[18rem] font-ash text-kench-yellow leading-none tracking-tighter opacity-10 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none select-none">
               KENCH
             </div>
-            <img src="/assets/logo.png" alt="Kench Logo" className="h-48 md:h-64 mx-auto mb-8 relative z-10" />
-            <h3 className="text-4xl md:text-6xl font-ash text-white mb-4 relative z-10">¿ESTÁS LISTO?</h3>
+            <img src="/assets/kench solo.png" alt="Kench Logo" className="h-48 md:h-64 mx-auto mb-8 relative z-10" />
+            <h3 className="text-4xl md:text-6xl font-ash text-white mb-4 relative z-10">ESTAS LISTO?</h3>
             <p className="text-gray-400 font-body text-xl max-w-2xl mx-auto">Únete a la comunidad más loca de Buenos Aires. Barra libre, buena música y el mejor ambiente.</p>
           </div>
           

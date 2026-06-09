@@ -4,7 +4,7 @@ const UltimosEventos = () => {
   const eventos = [
     {
       edicion: 'KENCH #10',
-      nombre: 'LA CLÁSICA DE OTOÑO',
+      nombre: 'LA CLASICA DE OTONO',
       fecha: 'Sábado 16 de Mayo',
       lugar: 'Niceto Club, Palermo',
       foto: '/assets/photos/galeria/IMG_6240.JPG',
@@ -44,7 +44,7 @@ const UltimosEventos = () => {
             LO QUE ESTUVIMOS HACIENDO
           </span>
           <h2 className="text-5xl md:text-8xl font-ash text-white uppercase leading-none tracking-tight">
-            ÚLTIMOS EVENTOS
+            ULTIMOS EVENTOS
           </h2>
           <div className="w-24 h-1 bg-kench-red mt-6" />
         </div>

@@ -24,7 +24,7 @@ const Artistas = () => {
               <p className="font-body text-2xl text-gray-400 leading-tight mb-12">
                 No es solo música, es un despliegue de energía pura. Desde shows visuales hasta performers que rompen el escenario. 
               </p>
-              <div className="sticker bg-kench-yellow text-black -rotate-3">CADA KENCH ES ÚNICA</div>
+              <div className="sticker bg-kench-yellow text-black -rotate-3">CADA KENCH ES UNICA</div>
             </motion.div>
           </div>
           

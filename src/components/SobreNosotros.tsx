@@ -16,7 +16,7 @@ const SobreNosotros = () => {
             viewport={{ once: true }}
             className="bg-kench-yellow p-10 relative shadow-[20px_20px_0px_0px_#ff0000] border-4 border-black"
           >
-            <div className="sticker-red absolute -top-8 -right-8 z-20">¿QUÉ ONDA?</div>
+            <div className="sticker-red absolute -top-8 -right-8 z-20">QUE ONDA?</div>
             <h2 className="text-7xl md:text-8xl font-ash text-black mb-8 uppercase leading-[1.2]">Sobre <br />Nosotros</h2>
             <p className="text-black text-2xl mb-6 font-body leading-tight">
               Kench no nació en una oficina, nació en el medio de una pista, con los bajos retumbando en el pecho y las ganas de que la noche no tenga reglas. 

@@ -31,7 +31,7 @@ const Hero = () => {
         >
           {/* Badge indicator */}
           <span className="sticker mb-6 transform -rotate-2 animate-pulse">
-            PRÓXIMA FECHA • ENTRADAS LIMITADAS
+            PROXIMA FECHA • ENTRADAS LIMITADAS
           </span>
 
           {/* Event Title */}
@@ -40,7 +40,7 @@ const Hero = () => {
           </h1>
           
           <span className="sticker bg-kench-red text-kench-yellow mb-8 transform rotate-1 text-2xl border-2 border-kench-yellow py-1 px-4">
-            EDICIÓN MUNDIAL
+            EDICION MUNDIAL
           </span>
           
           <p className="font-sequel text-lg sm:text-2xl text-kench-yellow tracking-[0.15em] uppercase mb-10 max-w-2xl leading-relaxed">
@@ -55,7 +55,7 @@ const Hero = () => {
             <div className="flex flex-col items-center p-4 border-b md:border-b-0 md:border-r border-white/10">
               <Calendar className="text-kench-red w-8 h-8 mb-3" />
               <span className="text-xs uppercase text-gray-400 font-sequel tracking-wider">CUÁNDO</span>
-              <span className="text-xl font-ash text-white mt-1 text-center">SÁB. 4 JULIO</span>
+              <span className="text-xl font-ash text-white mt-1 text-center">SAB. 4 JULIO</span>
             </div>
 
             <div className="flex flex-col items-center p-4 border-b md:border-b-0 md:border-r border-white/10">
